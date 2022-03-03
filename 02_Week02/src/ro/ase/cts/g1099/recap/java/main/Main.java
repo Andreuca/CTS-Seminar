@@ -3,24 +3,30 @@ package ro.ase.cts.g1099.recap.java.main;
 import java.util.ArrayList;
 import java.util.List;
 
+import ro.ase.cts.g1099.recap.java.exceptions.IllegalTransferException;
+import ro.ase.cts.g1099.recap.java.exceptions.InsufficientFundsException;
+import ro.ase.cts.g1099.recap.java.models.AccountType;
 import ro.ase.cts.g1099.recap.java.models.BankAccount;
 import ro.ase.cts.g1099.recap.java.models.Banker;
 
 public class Main {
 
-	public static void main(String[] args) {
-		System.out.println("Hello");
+	public static void main(String[] args) throws IllegalTransferException, InsufficientFundsException {
+		
+		System.out.println("Hello, my friends!");
 		
 		List<BankAccount> accounts = new ArrayList<>();
-		Banker abc= new Banker ("ABC");
 		
-		BankAccount myDebit = abc.openAccount(AccountType.SAVINGS);
-		BankAccount myCredit myCredit = abc.openAccount((AccountType.CURRENT);
+		Banker lawrence = new Banker("LAW");
 		
-		account.add(myCredit);
+		BankAccount myDebit = lawrence.openAccount(AccountType.SAVINGS);
+		BankAccount myCredit = lawrence.openAccount(AccountType.CURRENT);
+		
+		accounts.add(myCredit);
 		accounts.add(myDebit);
 		
 		myCredit.transfer(myDebit, 1000);
+		
 
 	}
 
