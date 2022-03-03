@@ -13,14 +13,14 @@ public class Main {
 
 	public static void main(String[] args) throws IllegalTransferException, InsufficientFundsException {
 		
-		System.out.println("Hello, my friends!");
+		System.out.println("Hello you");
 		
 		List<BankAccount> accounts = new ArrayList<>();
 		
-		Banker lawrence = new Banker("LAW");
+		Banker abc = new Banker("abc");
 		
-		BankAccount myDebit = lawrence.openAccount(AccountType.SAVINGS);
-		BankAccount myCredit = lawrence.openAccount(AccountType.CURRENT);
+		BankAccount myDebit = abc.openAccount(AccountType.SAVINGS);
+		BankAccount myCredit = abc.openAccount(AccountType.CURRENT);
 		
 		accounts.add(myCredit);
 		accounts.add(myDebit);
