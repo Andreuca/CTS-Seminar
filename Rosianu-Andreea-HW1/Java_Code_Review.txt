@@ -1,0 +1,47 @@
+Use Intention-Revealing Names:
+Meaningful names
+-- renamed class variable loan_value to loanValue
+-- renamed function name totalFee to brokerTotalFee
+-- renamed loan() function to getLoanValue()
+-- renamed setValue() function to setLoanValue()
+-- renamed to_string() function using naming conventions toString()
+-- renamed constructor parameter value to loanValue
+-- renamed function calculate() to computeBrokerTotalFee()
+-- renamed variable account_Type to accountType
+-- renamed constructor parameter account_Type to loanAccountType
+-- renamed function print() to printAccount()
+
+Do one Thing
+Functions
+-- created computeMathFunction() function to simplify the computeBrokerTotalFee function
+-- simplified getRate and getLoanValue by making other functions
+-- add this. to set and get functions
+-- created constructor with ValidationInterface as a parameter
+-- overriden toString fucntion
+
+Make sure the code formatting is applied:
+Format code
+-- used a lot of Ctrl + Shift + F to format the code
+-- moved constructor to the top of the class 
+
+Exceptions
+- created 3 custom exceptions and used them instead of the standard exception
+
+Comments
+--removed all the comments from the code
+
+Enums 
+-- made enum loanAccountType
+
+Methods
+-- validate constructor parameter rate
+-- validate computeBrokerTotalFee() parameters
+-- deleted unused variable vb 
+-- removed value 0.125 from brokerTotalFee +=
+-- removed variable temp and make it a final variable NO_DAYS_IN_YEAR
+-- removed value 365 from computeBrokerTotalFee
+-- removed value 0.125 and made a final variable BROKER_FEE
+-- generated getter and setter for daysActive
+
+
+
